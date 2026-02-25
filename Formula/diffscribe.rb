@@ -2,10 +2,10 @@
 # This file is rendered via packaging/homebrew/render.sh. Do not edit manually.
 
 class Diffscribe < Formula
-  desc "Ask an LLM to craft helpful Conventional Commit messages for your staged Git changes."
+  desc "Ask an LLM to craft helpful commit messages for your staged Git changes."
   homepage "https://github.com/nickawilliams/diffscribe"
   license "BSD-3-Clause"
-  version "0.1.0"
+  version "0.2.0"
 
   livecheck do
     url :stable
@@ -14,19 +14,19 @@ class Diffscribe < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nickawilliams/diffscribe/releases/download/v0.1.0/diffscribe_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1ff46bf2e46aa88b62e695fcacfb849a4cf7357d1ea57aab4d84a1a04342e61f"
+      url "https://github.com/nickawilliams/diffscribe/releases/download/v0.2.0/diffscribe_0.2.0_darwin_arm64.tar.gz"
+      sha256 "bf82707574d299053e09c36e8f409c126a4ab801b19ca0743934c4ed33f948db"
     end
 
     on_intel do
-      url "https://github.com/nickawilliams/diffscribe/releases/download/v0.1.0/diffscribe_0.1.0_darwin_x86_64.tar.gz"
-      sha256 "7439affe11707928be061387b834df557bdf54cc743264faec646a78be572698"
+      url "https://github.com/nickawilliams/diffscribe/releases/download/v0.2.0/diffscribe_0.2.0_darwin_x86_64.tar.gz"
+      sha256 "2a308e855e88bccf92df0adf50e802af5da5c4cfd5c44d96cf6da051ee12b50d"
     end
   end
 
   resource "source" do
-    url "https://github.com/nickawilliams/diffscribe/releases/download/v0.1.0/diffscribe_0.1.0_source.tar.gz"
-    sha256 "f0b4e2904302a92b986d89dc50bfda74a3623489de57e4d90eafca87743a4a64"
+    url "https://github.com/nickawilliams/diffscribe/archive/refs/tags/v0.2.0.tar.gz"
+    sha256 "127d9ee7fb55202a70ce2c329a4906480dbfce47eef05cbb736d1f13d1125d4f"
   end
 
   def install

@@ -5,7 +5,7 @@ class Diffscribe < Formula
   desc "Ask an LLM to craft helpful commit messages for your staged Git changes."
   homepage "https://github.com/nickawilliams/diffscribe"
   license "BSD-3-Clause"
-  version "0.2.0"
+  version "0.3.0"
 
   livecheck do
     url :stable
@@ -14,19 +14,19 @@ class Diffscribe < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/nickawilliams/diffscribe/releases/download/v0.2.0/diffscribe_0.2.0_darwin_arm64.tar.gz"
-      sha256 "bf82707574d299053e09c36e8f409c126a4ab801b19ca0743934c4ed33f948db"
+      url "https://github.com/nickawilliams/diffscribe/releases/download/v0.3.0/diffscribe_0.3.0_darwin_arm64.tar.gz"
+      sha256 "68cf1732665c905d1b5dd514079fc3b1da7dbc146ff2296edabd35bfd6418ca2"
     end
 
     on_intel do
-      url "https://github.com/nickawilliams/diffscribe/releases/download/v0.2.0/diffscribe_0.2.0_darwin_x86_64.tar.gz"
-      sha256 "2a308e855e88bccf92df0adf50e802af5da5c4cfd5c44d96cf6da051ee12b50d"
+      url "https://github.com/nickawilliams/diffscribe/releases/download/v0.3.0/diffscribe_0.3.0_darwin_x86_64.tar.gz"
+      sha256 "9a4ed17f82b657db7d5387a1685b270a6cb4391a04ba61e6fb3ca36f1f8dffa9"
     end
   end
 
   resource "source" do
-    url "https://github.com/nickawilliams/diffscribe/archive/refs/tags/v0.2.0.tar.gz"
-    sha256 "127d9ee7fb55202a70ce2c329a4906480dbfce47eef05cbb736d1f13d1125d4f"
+    url "https://github.com/nickawilliams/diffscribe/archive/refs/tags/v0.3.0.tar.gz"
+    sha256 "96c529366368598723626c7fc113561997298a3b53a3c2613dbd8924f59cb268"
   end
 
   def install
